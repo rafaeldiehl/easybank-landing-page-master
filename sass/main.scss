@@ -1,2 +1,6 @@
+// Config
 @import './config/variables';
-@import './config/reset';
+@import './config/base';
+
+// Components
+@import './components/button';

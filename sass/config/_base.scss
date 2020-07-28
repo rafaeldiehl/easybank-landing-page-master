@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: $very-light-gray;
+    color: $grayish-blue;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: $dark-blue;
+}
+
+h2, h3 {
+    color: black;
+}
+
+footer {
+    background: $dark-blue;
+    color: white;
+}
+
+.copyright {
+    color: $grayish-blue;
+}
+
+.attribution {
+    background: darken($dark-blue, 10%);
+    color: white;
+    font-size: 75%;
+    a {
+        color: $lime-green;
+        text-decoration: underline;
+    }
+}
+
+.header-nav {
+    background: white;
+}
+
+.features {
+    background: $light-grayish-blue;
+}
