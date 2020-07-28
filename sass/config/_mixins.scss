@@ -1,0 +1,61 @@
+/*
+*   Alguns mixins usados, foram encontrados em: https://engageinteractive.co.uk/blog/top-10-scss-mixins
+*/
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin font-source($family, $size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $family;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+$z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+);
+@function z($name) { // z-index: z("z-index");
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

@@ -3,10 +3,6 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-
-html {
     box-sizing: border-box;
 }
 
@@ -16,7 +12,6 @@ body {
     line-height: 1.6;
     background-color: $very-light-gray;
     color: $grayish-blue;
-    width: 100vw;
 }
 
 a {

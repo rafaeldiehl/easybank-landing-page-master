@@ -1,8 +1,11 @@
 .btn {
     background: linear-gradient(to right, $lime-green, $bright-cyan);
+    height: 45px;
+    width: 170px;
     color: white;
     padding: 0.8em 1.5em;
     border-radius: 5em;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 600;
+    @include flex(row, center);
 }

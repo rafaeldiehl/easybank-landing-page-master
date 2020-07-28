@@ -1,6 +1,10 @@
 // Config
 @import './config/variables';
+@import './config/mixins';
 @import './config/base';
 
 // Components
 @import './components/button';
+
+// Layout
+@import './layout/header';
