@@ -25,13 +25,7 @@
                 margin-top: 30px;
 
                 a {
-                    font-size: 23px;
                     margin: 3px;
-
-                    &:hover {
-                        color: $lime-green;
-                        transition: .3sc;
-                    }
                 }
             }
         }
@@ -39,7 +33,7 @@
         .utils-link {
             &:hover {
                 color: $lime-green;
-                transition: .3sc;
+                transition: .3s;
             }
         }
     }
