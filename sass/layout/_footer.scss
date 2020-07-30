@@ -1,0 +1,46 @@
+.footer {
+    @include flex(row, space-around);
+    align-content: space-around;
+    padding: 50px;
+
+    > .footer-section {
+        font-size: 14px;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin: 10px;
+            }
+
+            .request {
+                margin-left: 70px;
+            }
+
+            .copyright {
+                margin-top: 30px;
+            }
+
+            .social-media {
+                margin-top: 30px;
+
+                a {
+                    font-size: 23px;
+                    margin: 3px;
+
+                    &:hover {
+                        color: $lime-green;
+                        transition: .3sc;
+                    }
+                }
+            }
+        }
+
+        .utils-link {
+            &:hover {
+                color: $lime-green;
+                transition: .3sc;
+            }
+        }
+    }
+}
