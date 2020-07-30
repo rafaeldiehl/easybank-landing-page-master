@@ -1,11 +1,12 @@
 .btn {
     background: linear-gradient(to right, $lime-green, $bright-cyan);
-    height: 45px;
-    width: 170px;
+    height: 42px;
+    width: 154px;
     color: white;
     padding: 0.8em 1.5em;
     border-radius: 5em;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 15px;
     @include flex(row, center);
 }
