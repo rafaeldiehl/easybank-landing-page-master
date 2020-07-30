@@ -1,33 +1,31 @@
 .features {
-    padding: 110px 120px;
+    padding: 85px 120px;
     @include flex(column, start);
 
     > .features-header {
-        width: 95%;
+        width: 98%;
         text-align: left;
         margin-bottom: 45px;
-
-        h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        p {}
     }
 
     > .features-content {
         @include flex(row, space-between);
 
-        .feature {
+        > .feature {
+            
             margin: 20px;
 
-            .feature-icon {}
-            .feature-heading {
+            > .feature-icon {}
+
+            > .feature-heading {
                 font-size: 21px;
                 margin: 20px 0;
             }
-            .feature-description {
+
+            > .feature-description {
                 font-size: 14px;
             }
+
         }
     }
 }
