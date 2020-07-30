@@ -9,4 +9,9 @@
     font-weight: 400;
     font-size: 15px;
     @include flex(row, center);
+
+    &:hover {
+        background-position: 154px;  
+        transition: .7s;
+    }
 }

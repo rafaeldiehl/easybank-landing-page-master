@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: $dark-blue;
+    background: $lime-green;
+}
+
 body {
     font-family: $font-family;
     font-weight: 400;
