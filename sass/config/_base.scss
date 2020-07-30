@@ -19,13 +19,11 @@ a {
     color: inherit;
 }
 
-h1 {
+h1, h2, h3 {
     color: $dark-blue;
+    font-weight: 300;
 }
 
-h2, h3 {
-    color: black;
-}
 
 footer {
     background: $dark-blue;
