@@ -77,14 +77,14 @@
             max-width: 100vw;
     
             .article {
-                width: 350px;
+                width: 85vw;
                 background: white;
-                margin: 10px;
+                margin: 10px 0;
                 @include flex(column, center);
                 
                 .article-image {
-                    height: 250px;
-                    width: 350px;
+                    height: auto;
+                    width: 85vw;
                 }
 
                 .article-author {
