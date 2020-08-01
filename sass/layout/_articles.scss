@@ -17,8 +17,10 @@
             background: white;
             margin: 10px;
             @include flex(column, center);
+            border-radius: 8px;
             
             .article-image {
+                border-radius: 8px 8px 0 0;
                 height: 180px;
                 width: 240px;
             }

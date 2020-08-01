@@ -47,7 +47,7 @@
             background-repeat: no-repeat;
             background-position: 560px -250px;
             z-index: 99;
-            overflow-x: hidden;
+
     
             > .header-content-text {
                 padding-left: 150px;
@@ -72,4 +72,63 @@
         }
 
     } 
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+
+        .header-content {
+
+            > .header-content-text {
+                margin-left: -60px;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 1074px) {
+    .header {
+        > .wrapper {
+            @include flex(column, center);
+            height: 100%;
+    
+            .header-content {
+                @include flex(column-reverse, center);
+                background-image: url("../images/bg-intro-mobile.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: 0px -140px;
+                height: auto;
+                overflow: visible;
+    
+                > .header-content-text {
+                    @include flex(column, center);
+                    width: 100%;
+                    padding: 20px 0 50px;
+                    margin: 0;
+                    text-align: center;
+
+                    > .header-heading {
+                        font-size: 40px;
+                        padding: 0 50px;
+                        line-height: 45px;
+                    }
+
+                    > .header-description {
+                        padding: 0 30px;
+                        margin: 20px;
+                    }
+                }
+
+                > .header-image {
+                    width: 80vw;
+                    height: auto;
+                    margin: 0;
+                    margin-top: -150px;
+                }
+            }
+        }
+    }
 }
