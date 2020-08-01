@@ -1,18 +1,20 @@
 .features {
-    padding: 85px 120px;
+    padding: 85px 30px;
     @include flex(column, start);
 
     > .features-header {
         width: 98%;
+        padding-left: 120px;
         text-align: left;
         margin-bottom: 45px;
     }
 
     > .features-content {
         @include flex(row, space-between);
+        flex-wrap: wrap;
 
         > .feature {
-            
+            width: 230px;
             margin: 20px;
 
             > .feature-heading {
@@ -24,6 +26,64 @@
                 font-size: 14px;
             }
 
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .features {
+
+        > .features-header {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+
+        > .features-content {
+            @include flex(row, space-around);
+            flex-wrap: wrap;
+    
+            > .feature {
+                width: 230px;
+                margin: 20px;
+    
+                > .feature-heading {
+                    font-size: 21px;
+                    margin: 20px 0;
+                }
+    
+                > .feature-description {
+                    font-size: 14px;
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .features {
+
+        > .features-content {
+            @include flex(column, center);
+            flex-wrap: wrap;
+    
+            > .feature {
+                width: 420px;
+                margin: 20px;
+                padding: 0 50px;
+                text-align: center;
+    
+                > .feature-heading {
+                    font-size: 21px;
+                    margin: 20px 0;
+                }
+    
+                > .feature-description {
+                    font-size: 14px;
+                }
+    
+            }
         }
     }
 }
