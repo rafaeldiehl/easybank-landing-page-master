@@ -47,7 +47,7 @@
             background-repeat: no-repeat;
             background-position: 560px -250px;
             z-index: 99;
-
+            overflow-x: hidden;
     
             > .header-content-text {
                 padding-left: 150px;
@@ -90,6 +90,8 @@
 
 @media (max-width: 1074px) {
     .header {
+        margin-left: -12px;
+
         > .wrapper {
             @include flex(column, center);
             height: 100%;
