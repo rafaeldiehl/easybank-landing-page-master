@@ -26,13 +26,20 @@
 
                 a {
                     margin: 5px;
+
+                    img {
+                        &:hover {
+                            filter: invert(40%)  sepia(15%) saturate(2282%) hue-rotate(111deg) brightness(94%) contrast(90%);
+                            transition: .3s;
+                        }
+                    }
                 }
             }
         }
 
         .utils-link {
             &:hover {
-                color: $lime-green;
+                color: #2EC597;
                 transition: .3s;
             }
         }

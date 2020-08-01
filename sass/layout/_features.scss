@@ -3,8 +3,8 @@
     @include flex(column, start);
 
     > .features-header {
-        width: 98%;
-        padding-left: 120px;
+        width: 100%;
+        padding-left: 100px;
         text-align: left;
         margin-bottom: 45px;
     }
@@ -70,7 +70,7 @@
     
             > .feature {
                 width: 420px;
-                margin: 20px;
+                margin: 0;
                 padding: 0 50px;
                 text-align: center;
     
