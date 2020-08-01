@@ -7,7 +7,7 @@
 
 ## Acessar o site
 
-[Clique aqui](https://rafaeldiehl.github.io/easybank-landing-page-master/) para acessar o site.
+[Clique aqui](https://rafaeldiehl.github.io/easybank-landing-page-master/) para acessar o site
 
 ## Acessar localmente
 
@@ -23,3 +23,8 @@ Abra o arquivo index.html
 ```
 firefox index.html
 ```
+## Tecnologias usadas
+- HTML
+- CSS
+- JavaScript
+- Sass
