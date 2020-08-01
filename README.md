@@ -22,5 +22,4 @@ cd easybank-landing-page-master/dist
 Abra o arquivo index.html
 ```
 firefox index.html
-
-
+```
