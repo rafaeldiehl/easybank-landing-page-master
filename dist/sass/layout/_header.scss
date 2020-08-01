@@ -48,10 +48,8 @@
 
     > .wrapper {
         height: calc(100vh - 80px);
-        width: 100vw;
         overflow-y: visible;
         @include flex(row, center);
-
 
         .header-content {
             @include flex(row, space-between);
