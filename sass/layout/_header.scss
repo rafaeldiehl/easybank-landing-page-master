@@ -48,6 +48,7 @@
 
     > .wrapper {
         height: calc(100vh - 80px);
+        width: 100vw;
         overflow-y: visible;
         @include flex(row, center);
 
@@ -90,7 +91,6 @@
 @media (max-width: 1200px) {
 
     .header {
-        margin-left: -12px;
 
         > .wrapper {
 
