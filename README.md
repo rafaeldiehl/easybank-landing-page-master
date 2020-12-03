@@ -15,9 +15,9 @@ Clone este repositório
 ```
 git clone https://github.com/rafaeldiehl/easybank-landing-page-master.git
 ```
-Acesse o diretório
+Acesse o diretório principal
 ```
-cd easybank-landing-page-master/dist
+cd easybank-landing-page-master/
 ```
 Abra o arquivo index.html
 ```
